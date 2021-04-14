@@ -500,6 +500,21 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="40e8bdc8-32c5-46c5-95c4-7d50e2eebf1a">
+    <name>ЭтапыОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этапы оплаты</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="15aadb1c-e143-4779-9c62-2af594513d21">
     <name>ФормаДокумента</name>
     <synonym>
@@ -546,10 +561,10 @@
     <usePurposes>MobileDevice</usePurposes>
   </forms>
   <forms uuid="64688e05-482e-418d-a9f7-8514715ba245">
-    <name>Форма</name>
+    <name>ФормаРазбивкиНаЭтапы</name>
     <synonym>
       <key>ru</key>
-      <value>Форма</value>
+      <value>Форма разбивки на этапы</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
