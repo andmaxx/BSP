@@ -569,6 +569,15 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="78c99e2b-e268-49f1-a97b-902b1b3d277f">
+    <name>ФормаЭтаповОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма этапов оплаты</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <tabularSections uuid="ff4eafbe-57c1-4723-a901-3f475c9e1468">
     <producedTypes>
       <objectType typeId="7e2107c0-a228-446d-9b2d-986211af7816" valueTypeId="7b4934a2-e1b5-4475-8936-7a5fdc55c2cd"/>

@@ -1643,16 +1643,28 @@
       <items xsi:type="form:FormField">
         <name>ОригиналПолучен</name>
         <id>129</id>
+        <title>
+          <key>ru</key>
+          <value>Оригинал</value>
+        </title>
+        <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
-          <common>true</common>
+          <for>
+            <value>true</value>
+            <role>Role._УстановитьСтатусОплачено</role>
+          </for>
+          <for>
+            <value>true</value>
+            <role>Role.ПолныеПрава</role>
+          </for>
         </userVisible>
         <dataPath xsi:type="form:MultiLanguageDataPath">
           <paths xsi:type="form:DataPath">
             <segments>Объект.ОригиналПолучен</segments>
           </paths>
         </dataPath>
-        <titleLocation>Right</titleLocation>
+        <titleLocation>Left</titleLocation>
         <extendedTooltip>
           <name>ОригиналПолученРасширеннаяПодсказка</name>
           <id>131</id>
@@ -1678,12 +1690,24 @@
           </userVisible>
           <autoFill>true</autoFill>
         </contextMenu>
-        <type>CheckBoxField</type>
+        <type>LabelField</type>
         <editMode>Enter</editMode>
         <showInHeader>true</showInHeader>
         <headerHorizontalAlign>Left</headerHorizontalAlign>
         <showInFooter>true</showInFooter>
-        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        <extInfo xsi:type="form:LabelFieldExtInfo">
+          <handlers>
+            <event>Click</event>
+            <name>ОригиналПолученНажатие</name>
+          </handlers>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <format>
+            <key>ru</key>
+            <value>БЛ='Не получен'; БИ=Получен</value>
+          </format>
+          <hyperlink>true</hyperlink>
+        </extInfo>
       </items>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -3490,6 +3514,14 @@
     <handlers>
       <event>OnWriteAtServer</event>
       <name>ПриЗаписиНаСервере</name>
+    </handlers>
+    <handlers>
+      <event>AfterWrite</event>
+      <name>ПослеЗаписи</name>
+    </handlers>
+    <handlers>
+      <event>OnReadAtServer</event>
+      <name>ПриЧтенииНаСервере</name>
     </handlers>
     <repostOnWrite>true</repostOnWrite>
   </extInfo>
