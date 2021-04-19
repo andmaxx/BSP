@@ -560,15 +560,6 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="64688e05-482e-418d-a9f7-8514715ba245">
-    <name>ФормаРазбивкиНаЭтапы</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма разбивки на этапы</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="78c99e2b-e268-49f1-a97b-902b1b3d277f">
     <name>ФормаЭтаповОплаты</name>
     <synonym>
