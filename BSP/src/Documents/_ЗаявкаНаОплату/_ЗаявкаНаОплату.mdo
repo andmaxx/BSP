@@ -500,6 +500,21 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="f45d001d-b013-4836-81ef-d60efd8b0fc0">
+    <name>ЭтапыОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этапы оплаты</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="15aadb1c-e143-4779-9c62-2af594513d21">
     <name>ФормаДокумента</name>
     <synonym>
@@ -795,6 +810,17 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+  </tabularSections>
+  <tabularSections uuid="b9b589ef-b05e-4325-aff2-5d7885d6ae8e">
+    <producedTypes>
+      <objectType typeId="04fbc067-45f3-4549-a257-0a382b716cfa" valueTypeId="fe293947-4725-4861-b9c7-1d84b1eaddd0"/>
+      <rowType typeId="ac6dc992-a56d-4fec-bd92-4e2bca2cf6f6" valueTypeId="cf60de16-3b09-4a79-a121-b380740db3d2"/>
+    </producedTypes>
+    <name>РазбивкаНаЭтапыОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разбивка на этапы оплаты</value>
+    </synonym>
   </tabularSections>
   <templates uuid="fe762b89-b29c-4733-b0df-39bf1298ca95">
     <name>ПФ_MXL</name>
