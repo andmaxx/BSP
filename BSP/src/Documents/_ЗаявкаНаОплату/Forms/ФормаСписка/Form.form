@@ -1117,8 +1117,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Список.ОригиналПолучен</segments>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>Список.ОригиналПолучен</segments>
+        </paths>
       </dataPath>
       <extendedTooltip>
         <name>ОригиналПолученРасширеннаяПодсказка</name>

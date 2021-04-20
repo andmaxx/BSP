@@ -3617,6 +3617,14 @@
   </commandInterface>
   <extInfo xsi:type="form:DocumentFormExtInfo">
     <handlers>
+      <event>AfterWrite</event>
+      <name>ПослеЗаписи</name>
+    </handlers>
+    <handlers>
+      <event>OnReadAtServer</event>
+      <name>ПриЧтенииНаСервере</name>
+    </handlers>
+    <handlers>
       <event>BeforeWrite</event>
       <name>ПередЗаписью</name>
     </handlers>
@@ -3627,14 +3635,6 @@
     <handlers>
       <event>OnWriteAtServer</event>
       <name>ПриЗаписиНаСервере</name>
-    </handlers>
-    <handlers>
-      <event>AfterWrite</event>
-      <name>ПослеЗаписи</name>
-    </handlers>
-    <handlers>
-      <event>OnReadAtServer</event>
-      <name>ПриЧтенииНаСервере</name>
     </handlers>
     <repostOnWrite>true</repostOnWrite>
   </extInfo>
