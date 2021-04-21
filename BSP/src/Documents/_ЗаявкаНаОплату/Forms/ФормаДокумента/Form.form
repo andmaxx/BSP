@@ -3308,6 +3308,23 @@
       <common>true</common>
     </edit>
   </attributes>
+  <attributes>
+    <name>ЭтоПовторно</name>
+    <title>
+      <key>ru</key>
+      <value>Это повторно</value>
+    </title>
+    <id>12</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <formCommands>
     <name>УстановитьСтатусНеСогласован</name>
     <title>
@@ -3496,6 +3513,40 @@
       </handler>
     </action>
     <representation>Picture</representation>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>УстановитьСтатусПозвонить</name>
+    <title>
+      <key>ru</key>
+      <value>Установить статус позвонить</value>
+    </title>
+    <id>9</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>УстановитьСтатусПозвонить</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>УстановитьСтатусДоработать</name>
+    <title>
+      <key>ru</key>
+      <value>Установить статус доработать</value>
+    </title>
+    <id>10</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>УстановитьСтатусДоработать</name>
+      </handler>
+    </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <commandInterface>

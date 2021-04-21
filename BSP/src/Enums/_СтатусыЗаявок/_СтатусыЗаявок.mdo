@@ -67,4 +67,25 @@
     </synonym>
     <comment>Бухгалтерия оплатила счет</comment>
   </enumValues>
+  <enumValues uuid="c971c9cb-a170-4583-94ef-614515d02b60">
+    <name>Перезвонить</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перезвонить по телефону</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4e5099a1-5818-4de2-8f08-1f2370c56e23">
+    <name>Доработать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доработать</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1cbc9767-98b4-444d-91ac-bcf0fef5d3f8">
+    <name>Повторно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Повторно</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>
