@@ -165,6 +165,20 @@
         <value>000000006</value>
       </code>
     </items>
+    <items id="019b4acd-aca2-4be4-808d-a21f5750496d">
+      <name>ЗаявкаДоработать</name>
+      <description>Заявка доработать</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+    <items id="3bc08450-5e6b-4cf7-8b58-572c873de475">
+      <name>ЗаявкаПерезвонить</name>
+      <description>Заявка перезвонить</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
   </predefined>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
