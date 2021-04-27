@@ -515,6 +515,24 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="1b4424f6-9276-4b4e-8315-d49869c6d0c5">
+    <name>КомментарийСогласования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий согласования</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="15aadb1c-e143-4779-9c62-2af594513d21">
     <name>ФормаДокумента</name>
     <synonym>
