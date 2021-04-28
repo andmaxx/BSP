@@ -533,6 +533,55 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="f45d001d-b013-4836-81ef-d60efd8b0fc0">
+    <name>ЭтапыОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этапы оплаты</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b9ec8b3e-45f8-4301-acb4-6b7461b979e0">
+    <name>СуммаВсехЭтапов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма всех этапов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5c3a8672-e864-42bb-bfe9-742866f98c4a">
+    <name>ОсновнаяЗаявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная заявка</value>
+    </synonym>
+    <type>
+      <types>DocumentRef._ЗаявкаНаОплату</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="15aadb1c-e143-4779-9c62-2af594513d21">
     <name>ФормаДокумента</name>
     <synonym>
