@@ -312,6 +312,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.ПрименяетсяНДС</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>ПрименяетсяНДСПриИзменении1</name>
+      </handlers>
       <extendedTooltip>
         <name>ПрименяетсяНДСРасширеннаяПодсказка</name>
         <id>255</id>
@@ -3466,10 +3470,10 @@
     </items>
     <items xsi:type="form:FormField">
       <name>ПояснениеНДС</name>
-      <id>250</id>
+      <id>256</id>
       <title>
         <key>ru</key>
-        <value>Пояснение (НДС)</value>
+        <value>Внимание! Платеж БЕЗ НДС</value>
       </title>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -3481,7 +3485,7 @@
       </dataPath>
       <extendedTooltip>
         <name>ПояснениеНДСРасширеннаяПодсказка</name>
-        <id>252</id>
+        <id>258</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -3496,7 +3500,7 @@
       </extendedTooltip>
       <contextMenu>
         <name>ПояснениеНДСКонтекстноеМеню</name>
-        <id>251</id>
+        <id>257</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -3505,7 +3509,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
-      <editMode>EnterOnInput</editMode>
+      <editMode>Enter</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
