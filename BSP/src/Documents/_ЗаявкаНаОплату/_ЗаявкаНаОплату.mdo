@@ -582,6 +582,47 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="acd87c48-eb95-4e82-9874-d64858273770">
+    <name>ПрименяетсяНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Применяется НДС</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>БЛ='Без НДС'; БИ='С НДС'</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>БЛ='Без НДС'; БИ='С НДС'</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cce4c0ff-950b-4d53-85cd-e02e83debc6b">
+    <name>ПояснениеНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пояснение НДС</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="15aadb1c-e143-4779-9c62-2af594513d21">
     <name>ФормаДокумента</name>
     <synonym>

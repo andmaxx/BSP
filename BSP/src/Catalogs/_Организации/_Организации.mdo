@@ -126,4 +126,29 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="3edbacfd-8204-47de-a419-ef766bf8c0f5">
+    <name>ПрименяетсяНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Применяется НДС</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>БЛ='Без НДС'; БИ='С НДС'</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>БЛ='Без НДС'; БИ='С НДС'</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
 </mdclass:Catalog>
