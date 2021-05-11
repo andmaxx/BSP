@@ -163,8 +163,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Статус</segments>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>Статус</segments>
+        </paths>
       </dataPath>
       <extendedTooltip>
         <name>СтатусРасширеннаяПодсказка</name>
@@ -1364,8 +1366,10 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:DataPath">
-          <segments>Объект.КомментарийСогласования</segments>
+        <dataPath xsi:type="form:MultiLanguageDataPath">
+          <paths xsi:type="form:DataPath">
+            <segments>Объект.КомментарийСогласования</segments>
+          </paths>
         </dataPath>
         <extendedTooltip>
           <name>КомментарийСогласованияРасширеннаяПодсказка</name>
@@ -2960,7 +2964,7 @@
           </userVisible>
           <dataPath xsi:type="form:MultiLanguageDataPath">
             <paths xsi:type="form:DataPath">
-              <segments>РазбивкаНаЭтапыОплаты.Сумма</segments>
+              <segments>РазбивкаНаЭтапыОплаты.СуммаПлатежа</segments>
             </paths>
           </dataPath>
           <extendedTooltip>
@@ -3255,9 +3259,8 @@
           </userVisible>
           <autoFill>true</autoFill>
         </contextMenu>
-        <changeRowSet>true</changeRowSet>
-        <changeRowOrder>true</changeRowOrder>
         <autoMaxWidth>true</autoMaxWidth>
+        <height>4</height>
         <autoMaxHeight>true</autoMaxHeight>
         <autoMaxRowsCount>true</autoMaxRowsCount>
         <selectionMode>MultiRow</selectionMode>
@@ -4038,10 +4041,10 @@
       </edit>
     </columns>
     <columns>
-      <name>Сумма</name>
+      <name>СуммаПлатежа</name>
       <title>
         <key>ru</key>
-        <value>Сумма</value>
+        <value>Сумма платежа</value>
       </title>
       <id>2</id>
       <valueType>
