@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e7444b55-4082-4d1d-ba26-0b625848f31f">
+  <producedTypes>
+    <selectionType typeId="6d1f6f96-d7ef-4462-8b27-db6314f749eb" valueTypeId="a5cedfbe-c467-455c-ba2f-4c6180476132"/>
+    <listType typeId="0f0941ec-27d9-4beb-9542-ff3ef317d0d3" valueTypeId="0b813bb2-0219-48a1-9df2-81d6a5008b21"/>
+    <managerType typeId="44ff8712-13b5-474c-9108-b8695ba79fcd" valueTypeId="a787c69e-b8b8-4e93-8446-e7d95dd5d4e1"/>
+    <recordSetType typeId="b0b27c04-d073-4590-895d-cab682051820" valueTypeId="ccb028f8-e08e-4212-b74a-de13c4125c4b"/>
+    <recordKeyType typeId="7fa7d0aa-07bb-4037-a91c-4c446eb775b9" valueTypeId="f02ad26e-011a-489e-a51d-098ee7bbb8a4"/>
+    <recordType typeId="3c4609dc-4b02-40f9-96ac-20213664fc0b" valueTypeId="e0ab7bf7-b8df-4f3c-968e-329deec473f6"/>
+    <recordManagerType typeId="29896c6e-7e61-4d3d-b4ed-2b5b430f86ad" valueTypeId="bd75a0d5-775e-48ad-9886-52929f729d1a"/>
+  </producedTypes>
+  <name>_ГруппыДоступа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Группы доступа</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d5253af4-25b8-458d-a71c-30be0cd15cb3">
+    <name>ЗначениеДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступ разрешен</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c95db646-5bfa-4bf9-bbf7-35f9baa42e2d">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

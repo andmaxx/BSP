@@ -118,6 +118,13 @@
 			<value>true</value>
 		</right>
 	</object>
+	<object>
+		<name>InformationRegister._ГруппыДоступа</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
 	<restrictionTemplate>
 		<name>ДляОбъекта(ПолеОбъекта)</name>
 		<condition>// ДляОбъекта(ПолеОбъекта = "")
