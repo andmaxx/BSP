@@ -1335,6 +1335,7 @@
   <commandGroups>CommandGroup.Печать</commandGroups>
   <commandGroups>CommandGroup.СинхронизацияДанных</commandGroups>
   <constants>Constant._ОтправитьПисьмоПриОткрытииПослеИзменениияСтатуса</constants>
+  <constants>Constant._ОтправитьПисьмаСразу</constants>
   <constants>Constant._СоздатьИсходящееПисьмоПриИзмененииСтатуса</constants>
   <constants>Constant.АвтоматическиНастраиватьРазрешенияВПрофиляхБезопасности</constants>
   <constants>Constant.АдресПубликацииИнформационнойБазыВИнтернете</constants>

@@ -114,6 +114,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant._ОтправитьПисьмаСразу</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.ЭлектронноеПисьмоИсходящее.TabularSection.НаборыЗначенийДоступа.Attribute.ЗначениеДоступа</name>
 		<right>
 			<name>View</name>
@@ -3823,6 +3830,13 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister._ГруппыДоступа</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.Файлы</name>
 		<right>
 			<name>Read</name>
@@ -4365,13 +4379,6 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister._ГруппыДоступа</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
 		</right>
 	</object>
 </Rights>

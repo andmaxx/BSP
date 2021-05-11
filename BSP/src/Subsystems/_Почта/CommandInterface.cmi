@@ -6,6 +6,10 @@
       <visible/>
     </visibilityFragments>
     <visibilityFragments>
+      <command>Constant._ОтправитьПисьмаСразу.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
       <command>Constant._ОтправитьПисьмоПриОткрытииПослеИзменениияСтатуса.StandardCommand.Open</command>
       <visible/>
     </visibilityFragments>
