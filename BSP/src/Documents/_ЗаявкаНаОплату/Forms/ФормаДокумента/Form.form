@@ -311,8 +311,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ПрименяетсяНДС</segments>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>Объект.ПрименяетсяНДС</segments>
+        </paths>
       </dataPath>
       <handlers>
         <event>OnChange</event>
@@ -3483,8 +3485,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ПояснениеНДС</segments>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>Объект.ПояснениеНДС</segments>
+        </paths>
       </dataPath>
       <extendedTooltip>
         <name>ПояснениеНДСРасширеннаяПодсказка</name>
