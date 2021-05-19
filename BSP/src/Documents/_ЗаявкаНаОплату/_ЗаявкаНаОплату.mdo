@@ -221,6 +221,21 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="3949eb89-4574-44bf-a810-b7eadb9c6256">
+    <name>СтатусСогласования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус согласования</value>
+    </synonym>
+    <type>
+      <types>EnumRef._СтатусыЗаявок</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="bbfd3e9a-3494-4286-a227-21b05eb1fa44">
     <name>Примечание</name>
     <synonym>
@@ -500,7 +515,25 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="40e8bdc8-32c5-46c5-95c4-7d50e2eebf1a">
+  <attributes uuid="1b4424f6-9276-4b4e-8315-d49869c6d0c5">
+    <name>КомментарийСогласования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий согласования</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f45d001d-b013-4836-81ef-d60efd8b0fc0">
     <name>ЭтапыОплаты</name>
     <synonym>
       <key>ru</key>
@@ -508,6 +541,81 @@
     </synonym>
     <type>
       <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b9ec8b3e-45f8-4301-acb4-6b7461b979e0">
+    <name>СуммаВсехЭтапов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма всех этапов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5c3a8672-e864-42bb-bfe9-742866f98c4a">
+    <name>ОсновнаяЗаявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная заявка</value>
+    </synonym>
+    <type>
+      <types>DocumentRef._ЗаявкаНаОплату</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="acd87c48-eb95-4e82-9874-d64858273770">
+    <name>ПрименяетсяНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Применяется НДС</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>БЛ='Без НДС'; БИ='С НДС'</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>БЛ='Без НДС'; БИ='С НДС'</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cce4c0ff-950b-4d53-85cd-e02e83debc6b">
+    <name>ПояснениеНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пояснение НДС</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
