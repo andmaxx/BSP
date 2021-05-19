@@ -114,6 +114,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant._ОтправитьПисьмаСразу</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.ЭлектронноеПисьмоИсходящее.TabularSection.НаборыЗначенийДоступа.Attribute.ЗначениеДоступа</name>
 		<right>
 			<name>View</name>
@@ -2090,21 +2097,27 @@
 			<name>Read</name>
 			<value>true</value>
 			<restrictionByCondition>
-				<condition>ГДЕ Инициатор = &amp;ТекущийПользователь</condition>
+				<condition>ГДЕ Инициатор = &amp;ТекущийПользователь
+ИЛИ
+&amp;ТекущийПользователь В (ВЫБРАТЬ ЗначениеДоступа ИЗ РегистрСведений._ГруппыДоступа ГДЕ Пользователь = Инициатор)</condition>
 			</restrictionByCondition>
 		</right>
 		<right>
 			<name>Insert</name>
 			<value>true</value>
 			<restrictionByCondition>
-				<condition>ГДЕ Инициатор = &amp;ТекущийПользователь</condition>
+				<condition>ГДЕ Инициатор = &amp;ТекущийПользователь
+ИЛИ
+&amp;ТекущийПользователь В (ВЫБРАТЬ ЗначениеДоступа ИЗ РегистрСведений._ГруппыДоступа ГДЕ Пользователь = Инициатор)</condition>
 			</restrictionByCondition>
 		</right>
 		<right>
 			<name>Update</name>
 			<value>true</value>
 			<restrictionByCondition>
-				<condition>ГДЕ Инициатор = &amp;ТекущийПользователь</condition>
+				<condition>ГДЕ Инициатор = &amp;ТекущийПользователь
+ИЛИ
+&amp;ТекущийПользователь В (ВЫБРАТЬ ЗначениеДоступа ИЗ РегистрСведений._ГруппыДоступа ГДЕ Пользователь = Инициатор)</condition>
 			</restrictionByCondition>
 		</right>
 		<right>
@@ -3814,6 +3827,13 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister._ГруппыДоступа</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>

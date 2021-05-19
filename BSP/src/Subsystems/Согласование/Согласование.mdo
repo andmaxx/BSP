@@ -11,6 +11,7 @@
   <content>InformationRegister._СогласователиОрганизации</content>
   <content>InformationRegister._БухгалтерыОрганизации</content>
   <content>HTTPService.УстановкаСтатусЗаявки</content>
+  <content>InformationRegister._ГруппыДоступа</content>
   <subsystems>Справочники</subsystems>
   <subsystems>Документы</subsystems>
   <subsystems>Отчеты</subsystems>

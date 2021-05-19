@@ -16,4 +16,5 @@
   <content>Catalog.Пользователи</content>
   <content>Constant._СоздатьИсходящееПисьмоПриИзмененииСтатуса</content>
   <content>Constant._ОтправитьПисьмоПриОткрытииПослеИзменениияСтатуса</content>
+  <content>Constant._ОтправитьПисьмаСразу</content>
 </mdclass:Subsystem>
