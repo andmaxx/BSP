@@ -495,6 +495,44 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="fd8a3234-2390-44a7-b067-4ef34cb51f85">
+    <name>ДатаОплаты1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата оплаты1</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e59b36b2-7a0e-4d60-a741-98164d9adf98">
+    <name>СогласователиДляСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласователи для списка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="ff7a6848-2ba6-4efa-a8b6-cf8dbfd8f017">
     <name>ПодразделенияДляСписка</name>
     <synonym>

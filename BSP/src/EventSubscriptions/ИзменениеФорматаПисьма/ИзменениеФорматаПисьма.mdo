@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6297beef-8c0a-4d6c-ba3f-7661ed92fbef">
+  <name>ИзменениеФорматаПисьма</name>
+  <synonym>
+    <key>ru</key>
+    <value>Изменение формата письма</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ЭлектронноеПисьмоИсходящее</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule._ОбщийМодульВызовСервера.ИзменениеФорматаПисьмаПередЗаписью</handler>
+</mdclass:EventSubscription>

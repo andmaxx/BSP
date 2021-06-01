@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="da9b32e6-5b93-45a6-84b2-238d57541e18">
-  <name>НапоминанияПользователя</name>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="30804a8b-1a89-4aca-81b3-d3d79e29378f">
+  <name>_НапоминанияПользователя</name>
   <synonym>
     <key>ru</key>
     <value>Напоминания пользователя</value>
   </synonym>
   <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Напоминание</picture>
+  </picture>
   <content>InformationRegister.НапоминанияПользователя</content>
   <content>CommonCommand.Напомнить</content>
   <content>Enum.СпособыУстановкиВремениНапоминания</content>
@@ -26,5 +29,4 @@
   <content>DefinedType.ПредметНапоминанияОбъект</content>
   <content>CommonModule.НапоминанияПользователяПереопределяемый</content>
   <content>CommonModule.НапоминанияПользователя</content>
-  <parentSubsystem>Subsystem.СтандартныеПодсистемы</parentSubsystem>
 </mdclass:Subsystem>

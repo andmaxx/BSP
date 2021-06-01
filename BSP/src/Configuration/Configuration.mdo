@@ -54,12 +54,13 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <subsystems>Subsystem._БизнесПроцессыИЗадачи</subsystems>
+  <subsystems>Subsystem._НапоминанияПользователя</subsystems>
+  <subsystems>Subsystem._Почта</subsystems>
   <subsystems>Subsystem.Администрирование</subsystems>
   <subsystems>Subsystem.ПодключаемыеОтчетыИОбработки</subsystems>
-  <subsystems>Subsystem.СтандартныеПодсистемы</subsystems>
   <subsystems>Subsystem.Согласование</subsystems>
-  <subsystems>Subsystem._БизнесПроцессыИЗадачи</subsystems>
-  <subsystems>Subsystem._Почта</subsystems>
+  <subsystems>Subsystem.СтандартныеПодсистемы</subsystems>
   <styleItems>StyleItem.ВидДняПроизводственногоКалендаряВоскресеньеЦвет</styleItems>
   <styleItems>StyleItem.ВидДняПроизводственногоКалендаряНеУказанЦвет</styleItems>
   <styleItems>StyleItem.ВидДняПроизводственногоКалендаряПраздникЦвет</styleItems>
@@ -1115,6 +1116,8 @@
   <eventSubscriptions>EventSubscription.УстановитьПометкуУдаленияПрисоединенныхФайловДокументовВзаимодействия</eventSubscriptions>
   <eventSubscriptions>EventSubscription.УстановитьСнятьПометкуУдаленияЗаметок</eventSubscriptions>
   <eventSubscriptions>EventSubscription.УстановитьСтатусИзмененияПометкиУдаленияПользователя</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ИзменениеФорматаПисьма</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ИзменениеСпискаСогласователей</eventSubscriptions>
   <scheduledJobs>ScheduledJob.ЗагрузкаКлассификатораБанков</scheduledJobs>
   <scheduledJobs>ScheduledJob.ЗагрузкаКурсовВалют</scheduledJobs>
   <scheduledJobs>ScheduledJob.ЗаполнениеДанныхДляОграниченияДоступа</scheduledJobs>
