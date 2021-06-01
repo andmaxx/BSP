@@ -715,6 +715,15 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="1a2049e5-8c65-4042-94ac-755e6ed30db0">
+    <name>РеестрБухгалтерии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реестр бухгалтерии</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <tabularSections uuid="ff4eafbe-57c1-4723-a901-3f475c9e1468">
     <producedTypes>
       <objectType typeId="7e2107c0-a228-446d-9b2d-986211af7816" valueTypeId="7b4934a2-e1b5-4475-8936-7a5fdc55c2cd"/>
@@ -980,6 +989,17 @@
     <synonym>
       <key>ru</key>
       <value>Календарь бухгалтера</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+  <commands uuid="b377a1fb-eb3d-4e1f-b08b-4c7a6598e176">
+    <name>ЗаявкиРеестрБухгалтерии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реестр бухгалтерии</value>
     </synonym>
     <group>NavigationPanelOrdinary</group>
     <commandParameterType/>

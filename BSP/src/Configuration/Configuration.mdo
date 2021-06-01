@@ -556,6 +556,7 @@
   <roles>Role.ЧтениеРассылокОтчетов</roles>
   <roles>Role.ЧтениеРезультатовПроверкиУчета</roles>
   <roles>Role.ЧтениеШаблоновСообщений</roles>
+  <commonTemplates>CommonTemplate._todo</commonTemplates>
   <commonTemplates>CommonTemplate.ИнструкцияКакВыполнитьУстановкуОбновленияВручную</commonTemplates>
   <commonTemplates>CommonTemplate.ИнструкцияПоСозданиюФаксимильнойПодписиИПечати</commonTemplates>
   <commonTemplates>CommonTemplate.КомпонентаTWAIN</commonTemplates>
