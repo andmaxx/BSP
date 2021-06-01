@@ -100,6 +100,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Document._ЗаявкаНаОплату.Command.ЗаявкиРеестрБухгалтерии</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister._МониторингУведомлений</name>
 		<right>
 			<name>Read</name>
@@ -277,13 +284,6 @@
 		</right>
 		<right>
 			<name>SwitchToDataHistoryVersion</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Document._ЗаявкаНаОплату.Command.ЗаявкиРеестрБухгалтерии</name>
-		<right>
-			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
