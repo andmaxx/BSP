@@ -109,6 +109,30 @@
 				</dcscor:item>
 			</appearance>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заявка</dataPath>
+			<field>Заявка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заявка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Получатель</dataPath>
+			<field>Получатель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Пустое</dataPath>
+			<field>Пустое</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content> </v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	_БюджетОстаткиИОбороты.Регистратор КАК Регистратор,
@@ -120,7 +144,10 @@
 	_БюджетОстаткиИОбороты.СуммаПлатежаРасход КАК СуммаПлатежаРасход,
 	_БюджетОстаткиИОбороты.Инициатор КАК Инициатор,
 	_БюджетОстаткиИОбороты.КалендарныйПлатеж КАК КалендарныйПлатеж,
-	_БюджетОстаткиИОбороты.КалендарныйПлатеж.ПериодРегистрации КАК ПериодРегистрации
+	_БюджетОстаткиИОбороты.КалендарныйПлатеж.ПериодРегистрации КАК ПериодРегистрации,
+	_ЗаявкаНаОплату.Ссылка КАК Заявка,
+	_ЗаявкаНаОплату.Получатель КАК Получатель,
+	"" КАК Пустое
 ИЗ
 	РегистрНакопления._ДвиженияДенежныхСредств.ОстаткиИОбороты(
 			,
@@ -128,8 +155,20 @@
 			Авто,
 			,
 			КалендарныйПлатеж.ПериодРегистрации &gt;= &amp;НачалаПериодаРегистарции
-				И КалендарныйПлатеж.ПериодРегистрации &lt;= &amp;КонецПериодаРегистрации) КАК _БюджетОстаткиИОбороты</query>
+				И КалендарныйПлатеж.ПериодРегистрации &lt;= &amp;КонецПериодаРегистрации) КАК _БюджетОстаткиИОбороты
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ._ЗаявкаНаОплату КАК _ЗаявкаНаОплату
+		ПО _БюджетОстаткиИОбороты.Регистратор = _ЗаявкаНаОплату.Ссылка</query>
 	</dataSet>
+	<calculatedField>
+		<dataPath>Остаток</dataPath>
+		<expression>СуммаПлатежаПриход-суммаплатежарасход</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Остаток к расходованию</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
 	<totalField>
 		<dataPath>СуммаПлатежаКонечныйОстаток</dataPath>
 		<expression>Сумма(СуммаПлатежаКонечныйОстаток)</expression>
@@ -141,6 +180,10 @@
 	<totalField>
 		<dataPath>СуммаПлатежаРасход</dataPath>
 		<expression>Сумма(СуммаПлатежаРасход)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Остаток</dataPath>
+		<expression>Сумма(Остаток)</expression>
 	</totalField>
 	<parameter>
 		<name>НачалоПериода</name>
@@ -390,7 +433,11 @@
 					<dcsset:field>СуммаПлатежаРасход</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
 					<dcsset:field>СуммаПлатежаКонечныйОстаток</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Остаток</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:filter>
@@ -423,6 +470,12 @@
 					<dcsset:left xsi:type="dcscor:Field">КалендарныйПлатеж</dcsset:left>
 					<dcsset:comparisonType>Equal</dcsset:comparisonType>
 					<dcsset:userSettingID>f9dfd860-b2cd-4c9d-acf0-ef4f3316bd07</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Получатель</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>ada93f69-25e2-40d8-aa5b-5f4e8f9dab62</dcsset:userSettingID>
 				</dcsset:item>
 			</dcsset:filter>
 			<dcsset:dataParameters>
@@ -509,6 +562,37 @@
 					<dcsset:selection>
 						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Пустое</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Заявка</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Получатель</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
 				</dcsset:item>
 			</dcsset:item>
 		</dcsset:settings>

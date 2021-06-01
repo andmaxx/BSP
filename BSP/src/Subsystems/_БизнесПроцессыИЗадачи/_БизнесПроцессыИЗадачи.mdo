@@ -6,11 +6,6 @@
     <value>Бизнес-процессы и задачи</value>
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
-  <help>
-    <pages>
-      <lang>ru</lang>
-    </pages>
-  </help>
   <includeInCommandInterface>true</includeInCommandInterface>
   <picture xsi:type="core:PictureRef">
     <picture>StdPicture.BusinessProcess</picture>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f39e58ca-6837-40d7-acbc-24d5bb59c384">
+  <name>ИзменениеСпискаСогласователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Изменение списка согласователей</value>
+  </synonym>
+  <source>
+    <types>DocumentObject._ЗаявкаНаОплату</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule._ОбщийМодульВызовСервера.ИзменениеСпискаСогласователейПриЗаписи</handler>
+</mdclass:EventSubscription>
