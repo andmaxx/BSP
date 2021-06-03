@@ -302,10 +302,6 @@
     <items xsi:type="form:FormField">
       <name>ПрименяетсяНДС</name>
       <id>253</id>
-      <title>
-        <key>ru</key>
-        <value>Применяется</value>
-      </title>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -316,6 +312,7 @@
           <segments>Объект.ПрименяетсяНДС</segments>
         </paths>
       </dataPath>
+      <titleLocation>None</titleLocation>
       <handlers>
         <event>OnChange</event>
         <name>ПрименяетсяНДСПриИзменении1</name>

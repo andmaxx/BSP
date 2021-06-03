@@ -4060,6 +4060,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant._СоздатьИсходящееПисьмоПриИзмененииСтатуса</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.СогласиеНаОбработкуПерсональныхДанных.Attribute.ФИОСубъекта</name>
 		<right>
 			<name>View</name>

@@ -85,6 +85,22 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
   </dimensions>
+  <dimensions uuid="9d44e2c5-2d89-4ed9-986d-9ddbd2b92fa9">
+    <name>СтатусСогласования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус согласования</value>
+    </synonym>
+    <type>
+      <types>EnumRef._СтатусыЗаявок</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
   <dimensions uuid="28c33d5a-1787-4676-a7e6-7cd2c081afde">
     <name>ПервоеСогласование</name>
     <synonym>

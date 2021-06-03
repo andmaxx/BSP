@@ -4,6 +4,20 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
+		<name>Constant._ОтправитьПисьмаСразу</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant._ОтправитьПисьмоПриОткрытииПослеИзменениияСтатуса</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Document._ЗаявкаНаОплату</name>
 		<right>
 			<name>Read</name>
@@ -284,6 +298,13 @@
 		</right>
 		<right>
 			<name>SwitchToDataHistoryVersion</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant._СоздатьИсходящееПисьмоПриИзмененииСтатуса</name>
+		<right>
+			<name>Read</name>
 			<value>true</value>
 		</right>
 	</object>
