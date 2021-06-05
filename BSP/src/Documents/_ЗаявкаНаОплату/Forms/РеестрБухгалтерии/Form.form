@@ -6,17 +6,24 @@
     <items xsi:type="form:FormGroup">
       <name>ГруппаКП</name>
       <id>103</id>
-      <items xsi:type="form:Button">
-        <name>УстановитьИнтервал</name>
-        <id>146</id>
+      <items xsi:type="form:FormField">
+        <name>ПериодРегистрации1</name>
+        <id>177</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
           <common>true</common>
         </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ПериодРегистрации</segments>
+        </dataPath>
+        <handlers>
+          <event>OnChange</event>
+          <name>ПериодРегистрации1ПриИзменении</name>
+        </handlers>
         <extendedTooltip>
-          <name>УстановитьИнтервалРасширеннаяПодсказка</name>
-          <id>147</id>
+          <name>ПериодРегистрации1РасширеннаяПодсказка</name>
+          <id>179</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -29,13 +36,30 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <type>UsualButton</type>
-        <commandName>Form.Item.Список.StandardCommand.SetDateInterval</commandName>
-        <representation>PictureAndText</representation>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <placementArea>UserCmds</placementArea>
-        <representationInContextMenu>Auto</representationInContextMenu>
+        <contextMenu>
+          <name>ПериодРегистрации1КонтекстноеМеню</name>
+          <id>178</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <clearButton>true</clearButton>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
       </items>
       <items xsi:type="form:FormField">
         <name>ВидРеестра</name>
@@ -2179,10 +2203,10 @@
     </title>
     <id>8</id>
     <valueType>
-      <types>String</types>
-      <stringQualifiers>
-        <length>100</length>
-      </stringQualifiers>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
     </valueType>
     <view>
       <common>true</common>
