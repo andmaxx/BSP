@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="30804a8b-1a89-4aca-81b3-d3d79e29378f">
+  <name>НапоминанияПользователя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Напоминания пользователя</value>
+  </synonym>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Напоминание</picture>
+  </picture>
+  <content>InformationRegister.НапоминанияПользователя</content>
+  <content>CommonCommand.Напомнить</content>
+  <content>Enum.СпособыУстановкиВремениНапоминания</content>
+  <content>CommonModule.НапоминанияПользователяГлобальный</content>
+  <content>CommonModule.НапоминанияПользователяКлиентСервер</content>
+  <content>CommonModule.НапоминанияПользователяСлужебный</content>
+  <content>CommonModule.НапоминанияПользователяКлиентСерверПереопределяемый</content>
+  <content>CommonModule.НапоминанияПользователяКлиент</content>
+  <content>CommonModule.НапоминанияПользователяКлиентПовтИсп</content>
+  <content>CommonPicture.Напоминание</content>
+  <content>FunctionalOption.ИспользоватьНапоминанияПользователя</content>
+  <content>Constant.ИспользоватьНапоминанияПользователя</content>
+  <content>EventSubscription.ПроверитьИзмененияДатВПредмете</content>
+  <content>CommonPicture.КоллекцияНапоминания</content>
+  <content>CommonModule.НапоминанияПользователяВызовСервера</content>
+  <content>Role.ДобавлениеИзменениеНапоминаний</content>
+  <content>DefinedType.ПредметНапоминания</content>
+  <content>DefinedType.ПредметНапоминанияОбъект</content>
+  <content>CommonModule.НапоминанияПользователяПереопределяемый</content>
+  <content>CommonModule.НапоминанияПользователя</content>
+  <content>Enum._ВидыНапоминаний</content>
+</mdclass:Subsystem>

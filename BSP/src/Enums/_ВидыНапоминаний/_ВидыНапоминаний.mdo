@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f31a78ab-2edc-4346-9a94-36ed4f468ad7">
+  <producedTypes>
+    <refType typeId="c0785e75-eed0-47c9-9706-40fedf04c07c" valueTypeId="74bf34f4-9321-4159-bab8-a79b370b29ec"/>
+    <listType typeId="ba07fb9a-7a14-4e01-b8da-211af4b1229f" valueTypeId="a518d8b5-e52e-4eec-96d6-ec414818569c"/>
+    <managerType typeId="bcd2a8b5-babd-4632-bd30-68ce7277ab11" valueTypeId="ee74f8e6-913e-4d1f-bce8-63b0c6f4614a"/>
+  </producedTypes>
+  <name>_ВидыНапоминаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды напоминаний</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="6024cc26-9806-4ee9-a80b-6832a9ac4f3c">
+    <name>Оплата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оплата</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f65cf246-f99b-4c06-b21c-6e9b46d20855">
+    <name>Согласование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласование</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="eb45e3fa-9ff2-4683-8880-c6ed32a8e8cb">
+    <name>ОтсутствиеОплатыВСрок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отсутствие оплаты в срок</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d0d43eb3-1816-4528-b79e-55b23baf0c68">
+    <name>ПредоставлениеОригиналовДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предоставление оригиналов документов</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
