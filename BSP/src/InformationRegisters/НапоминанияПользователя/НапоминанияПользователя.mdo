@@ -243,6 +243,21 @@
       <value></value>
     </fillValue>
   </attributes>
+  <attributes uuid="91b3ddda-bcda-41ce-a56c-6fcd0c070723">
+    <name>ВидыНапоминания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Виды напоминания</value>
+    </synonym>
+    <type>
+      <types>EnumRef._ВидыНапоминаний</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <dimensions uuid="c3ffeb09-121b-4d77-9c15-def4648b4f3c">
     <name>Пользователь</name>
     <synonym>

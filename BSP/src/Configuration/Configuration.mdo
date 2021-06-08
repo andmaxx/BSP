@@ -55,7 +55,7 @@
     <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem._БизнесПроцессыИЗадачи</subsystems>
-  <subsystems>Subsystem._НапоминанияПользователя</subsystems>
+  <subsystems>Subsystem.НапоминанияПользователя</subsystems>
   <subsystems>Subsystem._Почта</subsystems>
   <subsystems>Subsystem.Администрирование</subsystems>
   <subsystems>Subsystem.ПодключаемыеОтчетыИОбработки</subsystems>
@@ -1727,6 +1727,7 @@
   <enums>Enum.ФорматыХраненияОдностраничныхФайлов</enums>
   <enums>Enum.ЦветаЗаметок</enums>
   <enums>Enum.ЦветностиИзображения</enums>
+  <enums>Enum._ВидыНапоминаний</enums>
   <reports>Report._Бюджет</reports>
   <reports>Report.АнализВерсийОбъектов</reports>
   <reports>Report.АнализЖурналаРегистрации</reports>

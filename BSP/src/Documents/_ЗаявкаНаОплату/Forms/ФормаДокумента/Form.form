@@ -2143,6 +2143,10 @@
                 <segments>Объект.РазбивкаПоСтатьям.ЦФО</segments>
               </paths>
             </dataPath>
+            <handlers>
+              <event>OnChange</event>
+              <name>РазбивкаПоСтатьямЦФОПриИзменении</name>
+            </handlers>
             <extendedTooltip>
               <name>РазбивкаПоСтатьямЦФОРасширеннаяПодсказка</name>
               <id>166</id>
@@ -3906,6 +3910,28 @@
     </notDefaultUseAlwaysAttributes>
     <main>true</main>
     <savedData>true</savedData>
+    <additionalColumns>
+      <tablePath xsi:type="form:DataPath">
+        <segments>Объект.РазбивкаПоСтатьям</segments>
+      </tablePath>
+      <columns>
+        <name>ЭтоЮрЛицо</name>
+        <title>
+          <key>ru</key>
+          <value>Это юр лицо</value>
+        </title>
+        <id>1</id>
+        <valueType>
+          <types>Boolean</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+    </additionalColumns>
   </attributes>
   <attributes>
     <name>Лимит</name>

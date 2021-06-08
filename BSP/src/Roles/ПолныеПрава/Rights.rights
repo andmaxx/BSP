@@ -4288,6 +4288,16 @@
 		</right>
 	</object>
 	<object>
+		<name>Document._ЗаявкаНаОплату</name>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>_ЗаявкаНаОплату ГДЕ НЕ _ЗаявкаНаОплату.Статус = ЗНАЧЕНИЕ(Перечисление._СтатусыЗаявок.Оплачено)</condition>
+			</restrictionByCondition>
+		</right>
+	</object>
+	<object>
 		<name>Document.ОтзывСогласияНаОбработкуПерсональныхДанных</name>
 		<right>
 			<name>InteractiveDelete</name>
